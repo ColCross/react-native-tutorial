@@ -9,13 +9,15 @@
 import React, {Component} from 'react';
 import {StyleSheet, View} from 'react-native';
 import DogSelect from './src/components/dog';
+import SimpleComponents from './src/components/simple';
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <DogSelect />
+        <SimpleComponents />
+        {/* <DogSelect /> */}
       </View>
     );
   }
@@ -26,6 +28,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#EEEEEE',
+    backgroundColor: '#EEEEEE'
   }
 });
